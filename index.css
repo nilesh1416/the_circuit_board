@@ -225,6 +225,11 @@
         width: 70vw;
         font-size: 5vw;
     }
+    #footer{
+        height: 25vh;
+        padding-left: 4vw;
+        margin-top: 2vh;
+    }
     
      }
 
