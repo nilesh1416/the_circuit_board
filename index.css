@@ -256,3 +256,12 @@
         border-radius: 5%;
         border: 2px solid#4b5163;
      }
+     #about3{
+        border: 2px solid white;
+        border-radius: 5%;
+        width: 2vmax;
+        height: 5vmax;
+     }
+     .col2{
+        color: blue;
+     }
