@@ -230,6 +230,15 @@
         padding-left: 4vw;
         margin-top: 2vh;
     }
+    .message{
+        height: 10vh;
+        background-color: aliceblue;
+        width: 80vmax;
+        padding-top: 3.5vh;
+        padding-left: 2vmax;
+        font-size: 2vmax;
+
+     }
     
      }
 
@@ -264,4 +273,14 @@
      }
      .col2{
         color: blue;
+     }
+
+     .message{
+        height: 10vh;
+        background-color: aliceblue;
+        width: 50vmax;
+        padding-top: 3.5vh;
+        padding-left: 2vmax;
+        font-size: 1.2vmax;
+
      }
