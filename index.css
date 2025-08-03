@@ -285,3 +285,74 @@
         font-size: 1.2vmax;
 
      }
+/* Grid wrapper for member cards */
+.member-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+    margin: 2vw auto;
+    max-width: 1200px;
+}
+
+/* Individual member card styling */
+.member-card {
+    flex: 1 1 22%; /* Around 4 cards in a row with spacing */
+    min-width: 220px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(206, 197, 188);
+    padding: 1vw;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease-in-out;
+}
+
+.member-card:hover {
+    transform: scale(1.03);
+}
+
+.member-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #2a2e37;
+    margin-bottom: 1vh;
+}
+
+.member-info {
+    text-align: center;
+}
+
+.member-info h2 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.member-info h3 {
+    font-size: 0.95em;
+    margin: 0.3em 0;
+}
+
+/* Tablet and Laptop: 4 in a row */
+@media (min-width: 768px) {
+    .member-card {
+        flex: 1 1 22%;
+    }
+}
+
+/* Mobile: 1 per row */
+@media (max-width: 767px) {
+    .member-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member-card {
+        width: 90%;
+        flex: 1 1 100%;
+    }
+}
