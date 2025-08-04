@@ -1,9 +1,9 @@
-*{
+/* *{
     background-color: rgb(206, 197, 188);
     color:black;
     overflow-wrap: normal;
     text-decoration: none;
-}
+} */
 /*----navbar-----*/
 /* #navbar{
     background-color: #2a2e37;
@@ -74,17 +74,18 @@
 }
 /* body part */
 #main-body{
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     flex-direction: row;
     height: 80vh;
+}
 
-
-
+body {
+    background-color: rgb(206, 197, 188) !important;
 }
 
 #b-content1{
-    background-color: rgb(255, 0, 34);
+    /* background-color: rgb(255, 0, 34); */
     width: 50vmax;
     display: flex;
     flex-direction: column;
@@ -136,37 +137,7 @@
 }
 
 /* footer-part */
-#footer{
-    background-color: #4b5163;
-    height: 35vh;
-    font-size: 2.5vmax;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-#footer a{
-    background-color: #4b5163;
-}
-.a-logo{
-    width: 10vmax;
-    height: 10vmax;
-    background-image: url("1685786833247.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position:left;
-    background-color: #4b5163;
-    margin-bottom: 1vw;
-    margin-top: 1vw;
-}
-.logo1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 10vmax;
-    background-color: #4b5163;
-}
+
 .copyr3{
     background-color: #4b5163;
     margin-left: 1vw;
@@ -716,5 +687,319 @@
         height: 12vmax;
         width: 12vmax;
         margin: 2vh 0;
+    }
+}
+
+/* Modern Footer Styles */
+.modern-footer {
+    background: linear-gradient(135deg, #1a1e25 0%, #2a2e37 50%, #34394a 100%);
+    color: #ffffff;
+    padding: 3rem 0 1rem;
+    margin-top: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.modern-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #9aaca6, #4b5163, #9aaca6);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2vh ;
+}
+
+.footer-section {
+    background-color: transparent;
+}
+
+.footer-section h3 {
+    color: #9aaca6;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    background-color: transparent;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(90deg, #9aaca6, #4b5163);
+}
+
+/* Quick Links */
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.quick-links ul li {
+    margin-bottom: 0.8rem;
+    background-color: transparent;
+}
+
+.quick-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    font-weight: 400;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.quick-links ul li a::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #9aaca6;
+    transition: all 0.3s ease;
+}
+
+.quick-links ul li a:hover {
+    color: #9aaca6;
+    transform: translateX(5px);
+}
+
+.quick-links ul li a:hover::before {
+    color: #ffffff;
+}
+
+/* University Section */
+.university-section {
+    text-align: center;
+    background-color: transparent;
+}
+
+.university-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: transparent;
+}
+
+.a-logo {
+    width: 80px;
+    height: 80px;
+    background-image: url("1685786833247.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: 2px solid rgba(154, 172, 166, 0.3);
+    border-radius: 50%;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.a-logo:hover {
+    border-color: #9aaca6;
+    transform: scale(1.05);
+}
+
+.university-details {
+    background-color: transparent;
+}
+
+.university-details h3,
+.university-details h4 {
+    background-color: transparent;
+    color: #ffffff;
+    margin: 0.3rem 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.university-details h3 {
+    font-size: 1.1rem;
+}
+
+.university-details h4 {
+    font-size: 1rem;
+    color: #9aaca6;
+}
+
+.university-details p {
+    color: #9aaca6;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    background-color: transparent;
+}
+
+.brand-highlight {
+    background: linear-gradient(45deg, #9aaca6, #4b5163);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    letter-spacing: 2px;
+}
+
+/* Statistics Section */
+.stats-section {
+    text-align: center;
+    background-color: transparent;
+}
+
+.stats-container {
+    background-color: transparent;
+}
+
+.flag-counter-wrapper {
+    background: rgba(154, 172, 166, 0.1);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-top: 1rem;
+    border: 1px solid rgba(154, 172, 166, 0.2);
+    transition: all 0.3s ease;
+}
+
+.flag-counter-wrapper:hover {
+    background: rgba(154, 172, 166, 0.2);
+    transform: translateY(-2px);
+}
+
+.flag-counter-wrapper a {
+    background-color: transparent;
+}
+
+.flag-counter-wrapper img {
+    border-radius: 8px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid rgba(154, 172, 166, 0.2);
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: transparent;
+}
+
+.copyright-section {
+    background-color: transparent;
+}
+
+.copyright-section p {
+    margin: 0.3rem 0;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.copyright-section p:first-child {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.creator-credit {
+    color: #9aaca6;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    background-color: transparent;
+}
+
+.social-link {
+    width: 45px;
+    height: 45px;
+    background: rgba(154, 172, 166, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.social-link:hover {
+    background: #9aaca6;
+    transform: translateY(-3px) scale(1.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px rgba(154, 172, 166, 0.3);
+}
+
+.social-link span {
+    background-color: transparent;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .quick-links ul li a {
+        padding-left: 0;
+    }
+
+    .quick-links ul li a::before {
+        display: none;
+    }
+
+    .footer-section h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .modern-footer {
+        padding: 2rem 0 1rem;
+    }
+
+    .footer-content {
+        padding: 0 1rem;
+    }
+
+    .footer-bottom {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .university-details h3,
+    .university-details h4 {
+        font-size: 0.9rem;
     }
 }
